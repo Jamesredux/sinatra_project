@@ -5,10 +5,11 @@
 		<% if @message %>
 			<p>ERROR <%= @message %></p>
 		<% end %>	
-	<p>And the number you would like the code shifted by.</p>		
+	
 		<form  action="/result" method="post">
-			<input type="text" name="string" placeholder="Text to be encrypted">
-			<input type="int" name="shift" placeholder="Shift Number">
+			<input type="text" name="string" placeholder="Text to be encrypted" size="35">
+				<p>And the number you would like the code shifted by.</p>	
+			<input type="int" name="shift" placeholder="Shift" size="5">
 			<input type="submit">
 		</form>
 	
